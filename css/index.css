@@ -53,6 +53,10 @@ ul li a {
   font-weight: 500;
 }
 
+.btn-login {
+  display: none;
+}
+
 .contrain {
   width: 100%;
   max-width: 90%;
@@ -108,7 +112,7 @@ ul li a {
 }
 
 button {
-  padding: 12px 24px;
+  padding: 12px 34px;
   border: none;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -182,4 +186,12 @@ button {
     grid-template-columns: repeat(1, 1fr);
     gap: 1em;
   }
+
+  ul {
+    display: none;
+  }
+
+  .btn-login {
+  display: block;
+}
 }
