@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  background: url("/img/dfvfvegr34.png");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.container {
+  padding: 1em 0;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #10403b;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+ul li a {
+  color: #10403b;
+  font-weight: 500;
+}
+
+.contrain {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* --------Hero Section Style _--------------- */
+
+.hero__section {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1em;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  line-height: 1.5;
+}
+
+.text h1 {
+  color: #10403b;
+  font-size: 2rem;
+}
+
+.text p {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.grid__box img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.text button {
+  padding: 1.2em 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #10403b;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #10403b;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.text button:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px -5px,
+    rgba(0, 0, 0, 0.04) 0px 4px 5px -5px;
+}
+
+.why__us__section {
+  padding: 1em 0;
+}
+
+.why__grid__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  align-items: center;
+}
+
+.why__text {
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
+.why__grid {
+  width: 100%;
+  background-color: #fff;
+  height: calc(auto + 20px);
+  padding: 2em;
+  border-radius: 5px;
+  margin: 1em 0;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.why__grid:hover {
+  transform: translateY(-5px);
+}
+
+.why__grid h4 {
+  color: #10403b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.why__grid p {
+  color: #000000;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 1em 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .hero__section {
+    margin: 2em 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .why__grid__box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
